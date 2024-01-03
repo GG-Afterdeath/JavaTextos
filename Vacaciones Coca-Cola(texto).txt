@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Centuria{
+  public static void main(String args[]){
+ 
+    String name="";
+    int clave=0;
+    int age=0;
+    Scanner wa = new Scanner(System.in);
+
+
+    System.out.println("Bienvenido al sistema vacacional de Coca-Cola Company");
+    System.out.println("Cual es el nombre del trabajador?");
+    name= wa.nextLine();
+
+    System.out.println("Cuantos annos de servicio tiene " +name +" ?");
+    age= wa.nextInt();
+
+    System.out.println("Cual es la clave de su departamento "+ name+" ?");
+    clave= wa.nextInt();
+    
+    if(clave==1){
+         
+         
+        if(age ==1){
+     	    System.out.println(name+ " tiene 6 dias de vacaciones.");
+        }else if(age>= 2 && age <=6){
+	        System.out.println(name+" tiene 14 dias de vacaciones.");
+        }else if(age>=7){
+	        System.out.println(name+ " tiene 20 dias de vacaciones.");
+        }else{
+	        System.out.println(name+ " no tiene vacaciones.");
+        }
+         
+         
+    }else if(clave==2){
+      
+      if(age ==1){
+     	    System.out.println(name+ " tiene 7 dias de vacaciones.");
+        }else if(age>= 2 && age <=6){
+	        System.out.println(name+" tiene 15 dias de vacaciones.");
+        }else if(age>=7){
+	        System.out.println(name+ " tiene 22 dias de vacaciones.");
+        }else{
+	        System.out.println(name+ " no tiene vacaciones.");
+        }
+      
+    }else if(clave==3){
+      
+      if(age ==1){
+     	    System.out.println(name+ " tiene 10 dias de vacaciones.");
+        }else if(age>= 2 && age <=6){
+	        System.out.println(name+" tiene 20 dias de vacaciones.");
+        }else if(age>=7){
+	        System.out.println(name+ " tiene 30 dias de vacaciones.");
+        }else{
+	        System.out.println(name+ " no tiene vacaciones.");
+        }
+    
+     }else{
+       System.out.println("Clave de departamento incorrecta");	
+     }
+  }
+}
