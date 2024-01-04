@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Lily{
+  public static void main(String args[]){
+
+    int election=0;
+    int uno=0, dos=0, tres=0, resultado=0;
+    Scanner nmix = new Scanner(System.in);
+
+    System.out.println("Bienvenido\n Ingrese los valores a operar [][][]");
+    uno= nmix.nextInt();
+    dos= nmix.nextInt();
+    tres= nmix.nextInt();
+    
+    System.out.println("Seleccione la operacion a realizar\n 1. Suma\n 2. Resta \n 3. Multiplicacion \n 4. Division \n 5. Potencia\n");
+    election= nmix.nextInt();   
+
+    switch(election){
+      case 1: 
+        resultado= (uno + dos + tres);
+        System.out.println("El resultado de la suma fue "+resultado);
+      break;
+
+      case 2:	
+        resultado= (uno - dos - tres);
+        System.out.println("El resultado de la resta fue "+resultado);
+      break;
+
+      case 3:
+        resultado= (uno * dos);
+        System.out.println("El resultado de multiplicar los dos primeros valores fue "+resultado);
+      break;
+      case 4:
+        resultado= (uno / dos);
+        System.out.println("El resultado de dividir"+ uno + " y " +dos + " fue: "+resultado);
+     break;
+ 
+     case 5:
+	resultado= (uno * uno);
+	System.out.println("Se ha potenciado el primer numero "+ uno+" el resultado es: " + resultado);
+     break;
+     
+     default:
+	System.out.println("Elija bien una operacion");
+     break;
+    }
+ }
+}

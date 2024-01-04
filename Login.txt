@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Kepler{
+
+  public static void main(String args []){
+
+    String name="",name1="Duque", password="",password1="Po1ombia";
+    Scanner spot = new Scanner(System.in);
+    
+    System.out.println("Inicie sesion");
+    System.out.println("Ingrese su nombre");
+    name= spot.nextLine();
+    System.out.println("Ingrese su contraseña");
+    password= spot.nextLine();
+
+    if(name.equals(name1) && password.equals(password1)){
+	System.out.println("Bienvenido al sistema");
+    }else{
+	System.out.println("Nombre o contraseña incorrecto");
+     }
+
+  }
+}

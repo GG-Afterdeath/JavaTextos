@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class SellOut{
+  public static void main(String args []){
+
+    String name1="", name2="";
+    Scanner waist = new Scanner(System.in);
+
+    System.out.println("Bienvenido al comparador de nombres, Empecemos.");
+    
+    System.out.println("Registre el primer nombre: ");
+    name1 = waist.nextLine();
+    System.out.println("Registre el segundo nombre: ");
+    name2= waist.nextLine();
+    	
+    if(name1.equals(name2)){
+      System.out.println("Los nombres coinciden :)");
+     }else{
+      System.out.println("Los nombres son diferentes");  
+         }
+    System.out.println("Terminado...");
+  }
+}

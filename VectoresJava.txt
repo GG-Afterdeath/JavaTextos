@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Shady{
+
+  public static void main(String args []){
+
+    int python[]= new int[5];
+    
+      python[0]=465;
+      python[1]=77;
+      python[2]=230;
+      python[3]=197;
+      python[4]=56;
+     
+
+      System.out.println("["+ python[0] + "]");
+      System.out.println("["+ python[1] + "]");
+      System.out.println("["+ python[2] + "]");
+      System.out.println("["+ python[3] + "]");
+      System.out.println("["+ python[4] + "]"); 
+  }
+}
