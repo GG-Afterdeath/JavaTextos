@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Zoom{
+
+  public static void main(String args []){
+			// [Fila][Columna]
+    int flop [][]= new int [3][4]
+    flop [0][0]= 0;
+    flop [0][1]= 1;
+    flop [0][2]= 2;
+    flop [0][3]= 3;
+    flop [1][0]= 4;
+    flop [1][1]= 5;
+    flop [1][2]= 6;
+    flop [1][3]= 7;	
+    flop [2][0]= 8;
+    flop [2][1]= 9;
+    flop [2][2]= 10;
+
+    System.out.println("["+flop [0][0]+"]");
+    System.out.println("["+flop [0][1]+"]");
+    System.out.println("["+flop [0][2]+"]");
+    System.out.println("["+flop [0][3]+"]");
+    System.out.println("["+flop [1][0]+"]");
+    System.out.println("["+flop [1][1]+"]");
+    System.out.println("["+flop [1][2]+"]");
+    System.out.println("["+flop [1][3]+"]");
+    System.out.println("["+flop [2][0]+"]");
+    System.out.println("["+flop [2][1]+"]");
+    System.out.println("["+flop [2][2]+"]");
+    System.out.println("["+flop [2][3]+"]");
+ }
+}

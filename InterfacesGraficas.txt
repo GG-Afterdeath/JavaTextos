@@ -1,0 +1,22 @@
+import javax.swing.*;
+
+public class Filia extends JFrame{
+
+  private JLabel label1;
+        //Los constructores se deben llamar igual que la clase
+    public Filia();// Constructor
+    setLayout(null);
+    label1 = new Jlabel("Que mas pues, estoy  en un label de JLabel");
+                 // ejeX, ejeY, width, high
+    lavel1.setBounds(10,20,200,300);
+    add(label1);
+    }
+
+    public static void main(String args []){
+
+      Filia fukua= new Filia();
+      fukua.setBounds(0,0,400, 300);
+      fukua.setVisible(true);
+      fukua.setLocationRelativeTo(null);
+    }
+}
