@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class AshKash{
+
+  public static void main(String args[]){
+ // --------------------------------
+    Scanner miki= new Scanner(System.in);
+    int filas, cols;
+    String captura;
+    
+    System.out.print("Buena, ingrese las filas:  ");
+    filas= miki.nextInt();
+    System.out.print("Buena, meta las columnas:  ");
+    cols= miki.nextInt();
+// --------------------------------
+
+    String matriz[][]= new String[filas][cols];
+// ---------------------------------
+
+    for(int f=0; f< filas; f++){
+
+      for(int c=0; c< cols;c++){
+        System.out.println("Ingrese un producto en el espacio "+ (f+1) +" " +(c+1));
+        captura= miki.nextLine();
+        matriz[f][c]=captura;
+       }  
+      System.out.println("  ");
+    }
+// -------------------------------
+
+    for(int f=0; f<filas; f++){
+
+      for(int c= 0; c< cols; c++){
+
+        System.out.print("["+matriz[f][c]+"]");
+       }
+      System.out.println("  ");
+    }
+  }
+}

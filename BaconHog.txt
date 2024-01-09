@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+public class Shady{
+
+  public static void main(String args []){
+// ---------------------
+    Scanner goofy = new Scanner(System.in);   
+    int fact=0, cedula=0, cant=0, elect=0, subelect=0, total=0, val=0;
+    String name="";
+
+// --------------------
+    System.out.println("Bienvenido a BaconHog");
+    System.out.print("Ingrese su nombre:  ");
+    name= goofy.nextLine();
+    System.out.print("Ingrese su cedula:  ");
+    cedula= goofy.nextInt();
+    System.out.println("Usuario registrado..");
+    System.out.println("\n");
+// ---------------------
+
+    System.out.println("Desea hace una orden\n1.Si .0 No");
+    subelect= goofy.nextInt();
+
+    while(subelect!=0){
+        System.out.println("Menu del dia:\n1. Tocino americano  15000\n2. Cerdo Japones  18000\n3. Chancho niigaraa  24500\n4. Ivan porki  10000\n0. Salir");
+        elect= goofy.nextInt();
+      switch(elect){
+ 
+        case 1:
+          val= 15000;
+          System.out.println("Cuanto Tocino Americano quiere?");
+          cant= goofy.nextInt();
+          total= cant * val;
+          System.out.println(total+" Agregado a la factura");
+        break;
+        
+        case 2:
+          val= 18000;  
+          System.out.println("Cuanto Cerdo Japones quiere?");
+          cant= goofy.nextInt();
+          total= cant * val;
+          System.out.println(total+ " Agregado a la factura.");
+        break;
+        
+        case 3: 
+          val=24500;
+          System.out.println("Cuanto Niigaraa quiere?");
+          cant= goofy.nextInt();
+          total= cant * val;
+          System.out.println(total+ " Agregado a la factura.");
+        break;
+        
+        case 4:
+          val= 10000;
+          System.out.println("Cuanto Ivan Duque quiere?");
+          cant= goofy.nextInt();
+          total= cant * val;
+          System.out.println(total+ " Agregado a la factura.");
+       break;
+       
+       case 0:
+         System.out.println("Vuelva pronto. Terminado......");
+         fact+= total;
+       break;
+       default:
+         System.out.println("Orden "+elect+" no disponible");
+       break;
+    }
+       
+// ----------------------
+        fact+=total;
+       System.out.println("Total universal "+ fact);    
+       System.out.println("\n");
+       System.out.println("Pedir otra orden?\n1. SI || 0.No --> Imprimir factura ");
+       subelect= goofy.nextInt();
+       System.out.println("Actualizando factura..");
+       System.out.println(" ");
+    }    
+
+   System.out.println("+----- Factura -----+\n Cliente: "+ name+ "\n Cedula: "+cedula+ "\n Valor total: "+fact  + "\n+----- Factura -----+");
+  }     
+}
+
